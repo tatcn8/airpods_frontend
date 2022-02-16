@@ -19,7 +19,7 @@ const SpotifyTests = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:8000/playlists`, {
+    axios.post(`https://teamairprojectthree.herokuapp.com/playlists`, {
       name: name,
       images: images,
       description: description,

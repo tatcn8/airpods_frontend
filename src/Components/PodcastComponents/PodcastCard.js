@@ -7,7 +7,7 @@ const PodcastCard = (props) => {
   const { id, name, category, image_url, external_urls } = props;
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:8000/playlists`, {
+    axios.post(`https://teamairprojectthree.herokuapp.com/playlists`, {
       name: name,
       category: category,
       image_url: image_url,

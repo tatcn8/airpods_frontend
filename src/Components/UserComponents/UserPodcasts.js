@@ -5,7 +5,7 @@ import './Cards.css'
 
 const UserPodcasts = () => {
     const [ playlist, setPlaylist ] = useState()
-    const url = 'http://localhost:8000/playlists'
+    const url = 'https://teamairprojectthree.herokuapp.com/playlists'
 
     useEffect(()=>{
         axiosInstance.get(url)

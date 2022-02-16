@@ -11,7 +11,7 @@ const Home = () => {
     // axiosInstance.get("podcasts").then((res) => {
     //   setPodcasts(res.data);
     // });
-    axios.get('http://localhost:8000/podcasts', 
+    axios.get('https://teamairprojectthree.herokuapp.com/podcasts', 
     {headers: {'Authorization': `Bearer ${localStorage.getItem('token')}`}})
     .then((res)=>{
       setPodcasts(res.data);

@@ -5,7 +5,7 @@ import { Col } from "reactstrap";
 
 const OurData = () => {
   const [podcasts, setPodcasts] = useState();
-  const url = `http://localhost:8000/podcasts`;
+  const url = `https://teamairprojectthree.herokuapp.com/podcasts`;
 
   useEffect(() => {
     axios.get(url).then((res) => {

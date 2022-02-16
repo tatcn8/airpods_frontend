@@ -19,7 +19,7 @@ const UserCards = (props) => {
   const toggle = () => setModal(!modal);
 
   const deleteFunction = () => {
-    axios.delete(`http://localhost:8000/playlists/${_id}`);
+    axios.delete(`https://teamairprojectthree.herokuapp.com/playlists/${_id}`);
     window.location.reload();
   };
 

@@ -8,7 +8,7 @@ const SearchCard = (props) => {
    
     const handleSubmit = (e) =>{
         e.preventDefault()
-        axios.post(`http://localhost:8000/playlists`, {name: name, category: category, image_url: image_url, id: id})
+        axios.post(`https://teamairprojectthree.herokuapp.com/playlists`, {name: name, category: category, image_url: image_url, id: id})
     }
 
     return(

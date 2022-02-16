@@ -12,7 +12,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
       e.preventDefault()
-      axios.post('http://localhost:8000/api/signup', {
+      axios.post('https://teamairprojectthree.herokuapp.com/api/signup', {
           email: email,
           password: password
       })
